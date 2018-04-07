@@ -4,7 +4,231 @@ html {
 }
 
 body {
+  margin: auto;
   font-family: Helvetica;
+  width: 960px;
 }
 
 /* Header */
+
+header {
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 1rem;
+  height: 30rem;
+}
+
+.header {
+  color: white;
+  font-size: 1rem;
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerleft {
+  display: flex;
+  align-items: center;
+}
+
+.headerleft img {
+  margin-left: 2rem;
+  margin-right: 1rem;
+  height: 1.5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.headerright {
+  margin-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.headerright span {
+  margin-left: 2rem;
+}
+
+.headerflex {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.headerbox {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: bold;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  margin-top: 10rem;
+  margin-right: -2rem;
+}
+
+/* Logo Section */
+
+.logos {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 8rem;
+  margin: 3rem auto;
+}
+
+.paper {
+  width: 3.5rem;
+  margin-right: 6rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paper img {
+  width: 3.5rem;
+}
+
+.ruler {
+  width: 5rem;
+  margin-right: 6rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ruler img {
+  width: 5rem;
+}
+
+.truck {
+  width: 5rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.truck img {
+  width: 5rem;
+}
+
+/* Info Section */
+
+.info {
+  display: flex;
+  justify-content: center;
+}
+
+.info div {
+  width: 35%;
+}
+
+.philosophy {
+  margin-right: 5%;
+}
+
+.info div h1 {
+  color: white;
+  background-color: cadetblue;
+  width: 10rem;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: 1.25rem;
+}
+
+/* Footer */
+
+.footer {
+  background-color: azure;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-left: 4rem;
+  margin-right: 1rem;
+}
+
+/* Different Screen Sizes */
+
+@media only screen and (min-width: 1537px) {
+  body {
+    width: 100%;
+  }
+
+  .header {
+    width: 960px;
+    margin: auto;
+  }
+
+  .headerflex {
+    width: 960px;
+    margin: auto;
+  }
+
+  .info {
+    width: 960px;
+    margin: auto;
+  }
+
+  footer {
+    width: 100%;
+    background-color: azure;
+  }
+
+  .footer {
+    width: 960px;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1536px) {
+  body {
+    width: 100%;
+  }
+
+  header {
+    padding-top: 0px;
+    height: 22rem;
+    background-position: -7.5rem 0rem;
+  }
+
+  .headerbox {
+    font-size: 1.33rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    padding: .75rem 4rem;
+  }
+
+  .info div {
+    width: 45%;
+  }
+
+  .info {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  body {
+    width: 100%;
+  }
+
+}
