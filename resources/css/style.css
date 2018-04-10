@@ -51,6 +51,10 @@ header {
   margin-left: 2rem;
 }
 
+.menu {
+  display: none;
+}
+
 .headerflex {
   display: flex;
   justify-content: flex-end;
@@ -204,7 +208,6 @@ footer img {
   header {
     padding-top: 0px;
     height: 22rem;
-    background-position: -7.5rem 0rem;
   }
 
   .headerbox {
@@ -226,9 +229,110 @@ footer img {
   }
 }
 
+@media only screen and (min-width: 641px) and (max-width: 1200px) {
+  body {
+    width: 100%;
+  }
+
+  header {
+    padding-top: 0px;
+    height: 22rem;
+    background-size: 1536px auto;
+    background-position: -7.5rem 0rem;
+  }
+
+  .headerbox {
+    font-size: 1.33rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    padding: .75rem 4rem;
+  }
+
+  .info div {
+    width: 45%;
+  }
+
+  .info {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media only screen and (max-width: 640px) {
   body {
     width: 100%;
   }
 
+  header {
+    padding-top: 0rem;
+    height: 17rem;
+  }
+
+  .headerflex {
+    justify-content: center;
+  }
+
+  .headerbox {
+    width: 40%;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 9rem;
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .headernav {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .logos {
+    height: auto;
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logos div {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: .77rem;
+  }
+
+  .logos div span {
+    margin-top: .5rem;
+  }
+
+  .paper {
+    margin-bottom: 1.75rem;
+  }
+
+  .ruler {
+    margin-bottom: 1.75rem;
+  }
+
+  .truck {
+    margin-bottom: 0rem;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .info div h1 {
+  }
+
+  .footer span {
+    display: none;
+  }
 }
